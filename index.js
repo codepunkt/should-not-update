@@ -12,7 +12,10 @@ class ShouldNotUpdate extends React.Component {
 }
 
 ShouldNotUpdate.propTypes = {
-  component: React.PropTypes.node,
+  component: React.PropTypes.oneOfType([
+    React.PropTypes.func,
+    React.PropTypes.node,
+  ]),
   children: React.PropTypes.node.isRequired,
   exceptWhen: React.PropTypes.bool,
 }
