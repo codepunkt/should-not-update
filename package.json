@@ -1,0 +1,29 @@
+{
+  "name": "should-update-component",
+  "version": "1.0.0",
+  "description": "Declarative shouldComponentUpdate wrapper",
+  "main": "build.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codepunkt/should-update-component.git"
+  },
+  "author": "Christoph Werner <christoph@codepunkt.de>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "component",
+    "performance",
+    "shouldComponentUpdate"
+  ],
+  "scripts": {
+    "build": "babel index.js -o build.js"
+  },
+  "dependencies": {
+    "react": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-preset-es2015": "^6.18.0"
+  }
+}
