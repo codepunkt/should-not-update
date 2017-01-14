@@ -1,11 +1,11 @@
 {
-  "name": "should-update-component",
+  "name": "should-not-update",
   "version": "1.0.0",
   "description": "Declarative shouldComponentUpdate wrapper",
   "main": "build.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codepunkt/should-update-component.git"
+    "url": "git+https://github.com/codepunkt/should-not-update.git"
   },
   "author": "Christoph Werner <christoph@codepunkt.de>",
   "license": "MIT",
