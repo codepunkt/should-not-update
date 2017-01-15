@@ -1,4 +1,6 @@
 # ShouldNotUpdate
+[![npm version](https://badge.fury.io/js/should-not-update.svg)](https://badge.fury.io/js/should-not-update) [![Build Status](https://travis-ci.org/codepunkt/should-not-update.svg?branch=master)](https://travis-ci.org/codepunkt/should-not-update) [![Coverage Status](https://coveralls.io/repos/github/codepunkt/should-not-update/badge.svg?branch=master)](https://coveralls.io/github/codepunkt/should-not-update?branch=master)
+
 Simple component utilizing the `shouldComponentUpdate` lifecycle hook. Wrap it around child components that you don't want to rerender on property changes.
 ```javascript
 import ShouldNotUpdate from 'should-not-update'
