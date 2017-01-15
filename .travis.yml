@@ -3,3 +3,5 @@ cache: yarn
 node_js:
   - "6.9.2"
   - "7"
+after_script:
+  - cat ./coverage/lcov.info | `yarn bin`/coveralls
