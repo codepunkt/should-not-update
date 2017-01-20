@@ -1,28 +1,13 @@
 import React from 'react'
 
-class ShouldNotUpdate extends React.Component {
-  shouldComponentUpdate() {
-    return this.props.exceptWhen
+const ShouldNotUpdate = (Component, exceptWhen = () => false) => class extends React.PureComponent {
+  shouldComponentUpdate(nextProps) {
+    return exceptWhen(nextProps)
   }
+
   render() {
-    const { children, component, ...rest } = this.props
-    delete rest.exceptWhen
-    return React.createElement(component, rest, children)
+    return <Component {...this.props} />
   }
-}
-
-ShouldNotUpdate.propTypes = {
-  component: React.PropTypes.oneOfType([
-    React.PropTypes.func,
-    React.PropTypes.node,
-  ]),
-  children: React.PropTypes.node.isRequired,
-  exceptWhen: React.PropTypes.bool,
-}
-
-ShouldNotUpdate.defaultProps = {
-  component: 'div',
-  exceptWhen: false,
 }
 
 export default ShouldNotUpdate
