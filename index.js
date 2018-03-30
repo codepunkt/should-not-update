@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class ShouldNotUpdate extends React.Component {
   shouldComponentUpdate() {
@@ -12,12 +13,12 @@ class ShouldNotUpdate extends React.Component {
 }
 
 ShouldNotUpdate.propTypes = {
-  component: React.PropTypes.oneOfType([
-    React.PropTypes.func,
-    React.PropTypes.node,
+  component: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.node,
   ]),
-  children: React.PropTypes.node.isRequired,
-  exceptWhen: React.PropTypes.bool,
+  children: PropTypes.node.isRequired,
+  exceptWhen: PropTypes.bool,
 }
 
 ShouldNotUpdate.defaultProps = {
