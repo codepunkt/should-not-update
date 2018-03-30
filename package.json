@@ -20,7 +20,10 @@
     "test": "jest --coverage"
   },
   "dependencies": {
-    "react": "^15.4.2"
+    "prop-types": "^15.6.1"
+  },
+  "peerDependencies": {
+    "react": "15.x || 16.x"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -30,6 +33,7 @@
     "coveralls": "^2.11.15",
     "enzyme": "^2.7.0",
     "jest": "^18.1.0",
+    "react": "15.x",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2"
   }
